@@ -141,7 +141,8 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.brown),
+                    style:
+                        ElevatedButton.styleFrom(backgroundColor: Colors.brown),
                     onPressed: () {
                       initPlatformState();
                     },
@@ -153,7 +154,8 @@ class _MyAppState extends State<MyApp> {
                   const SizedBox(width: 20),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: _connected ? Colors.red : Colors.green),
+                        backgroundColor:
+                            _connected ? Colors.red : Colors.green),
                     onPressed: _connected ? _disconnect : _connect,
                     child: Text(
                       _connected ? 'Disconnect' : 'Connect',
@@ -166,7 +168,8 @@ class _MyAppState extends State<MyApp> {
                 padding:
                     const EdgeInsets.only(left: 10.0, right: 10.0, top: 50),
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.brown),
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.brown),
                   onPressed: () {
                     testPrint.sample();
                   },
